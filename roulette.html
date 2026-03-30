@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We-Craft Roulette Pro</title>
+    <link rel="stylesheet" href="roulette.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>ROULETTE</h1>
+        <div class="coins-display">COINS: <span id="balance">10000</span></div>
+    </div>
+
+    <div class="wheel-container">
+        <div class="pointer"></div>
+        <div id="wheel"></div>
+    </div>
+
+    <div id="status">Apna Bet Select Karo!</div>
+
+    <div class="betting-area">
+        <button class="bet-btn red" onclick="setBet('red')">RED</button>
+        <button class="bet-btn black" onclick="setBet('black')">BLACK</button>
+    </div>
+
+    <button class="spin-btn" onclick="spinNow()">SPIN</button>
+
+    <script src="roulette.js"></script>
+</body>
+</html>
